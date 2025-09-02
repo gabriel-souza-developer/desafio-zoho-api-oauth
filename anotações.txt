@@ -26,3 +26,5 @@ https://accounts.zoho.com/oauth/v2/auth?scope=ZohoCliq.Profile.READ&client_id=10
 ULR APÓS ACESSAR: 
 
 https://gabriel-souza-developer.github.io/gerar-registro-de-atendimento/?code=1000.cea9cc7cd27386787666b1dc9214d120.ec4985bd58f8964cdf3ca771efe0d52d&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com&
+
+Erros: curl, foi necessário habilitar manualmente. 
