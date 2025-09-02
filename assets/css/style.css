@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #2B3591;
+  --primary-color-hover: #20276e; 
+  --secondary-color: #CD2784;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --text-color: #495057;
+  --accent-color: #ffc107;
+  --input-bg-color: #fff;
+  --input-border-color: #ced4da;
+  --form-section-bg: #fdfdfd;
+  --form-section-border: #d0d0d5;
+}
+
+body {
+  background-color: var(--light-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+/* Logo dentro do card */
+.app-logo {
+  height: 65px;
+}
+
+/* Botão Zoho */
+.btn-zoho {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-zoho:hover {
+  background-color: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+}
+
+/* Card centralizado */
+.app-card {
+  max-width: 380px;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card-body a:hover {
+  background-color: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.app-header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.app-header__logo img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.app-header__title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.app-header__subtitle {
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.app-card {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 5vh;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  background-color: var(--light-color);
+  z-index: 2;
+}
+
+.app-card__bg {
+  background: url("../img/background-card.jpg") no-repeat center center/cover;
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.app-card .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+.app-footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--form-section-border);
+}
+
+.app-footer__github-link {
+  color: var(--se-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+
+.app-footer__github-link:hover {
+  color: var(--primary-color);
+}
+
