@@ -1,0 +1,28 @@
+FLUXO DO PROJETO: 
+
+1. Acessa http://localhost:8000/index.php.
+2. Clica no botão “Login Zoho”.
+3. Faz login → Zoho redireciona para http://localhost:8000/callback.php?code=xxxx.
+4. O PHP troca esse code pelo access_token.
+5. Exibe o token na tela (só pra teste).
+
+
+APLICAÇÃO COM SERIAL NOKIA: 
+
+https://186.232.194.141:8510/?code=1000.2fd3fae52fd341bff8d7d8defd2e0990.a97fcd11c0e8d943a5b4ae15b440592c&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com&
+
+TELA DE LOGIN: 
+
+https://accounts.zoho.com/oauth/v2/auth?response_type=code&client_id=1000.71NJ2O1W5XJ5DR9X177D474ERBU0PY&redirect_uri=https%3A%2F%2F186.232.194.141%3A8510&scope=ZohoCliq.Profile.READ&access_type=offline&prompt=consent
+
+PROXXIMA CARONA: 
+
+https://accounts.zoho.com/oauth/v2/auth?response_type=code&client_id=1000.P5D1YNT67IRK5CK0O1UW8FW11INTBY&redirect_uri=http%3A%2F%2F186.232.194.141%3A8512%2Foauth%2Fcallback&scope=ZohoCliq.Profile.READ%2CZohoCliq.Webhooks.CREATE&access_type=offline&prompt=consent
+
+APLICAÇÃO COM OAUTH SIMPLES
+
+https://accounts.zoho.com/oauth/v2/auth?scope=ZohoCliq.Profile.READ&client_id=1000.S8MRH7ENPZ4R17PF18X7KTH2V7E8VG&response_type=code&access_type=offline&redirect_uri=https://gabriel-souza-developer.github.io/gerar-registro-de-atendimento/&prompt=consent
+
+ULR APÓS ACESSAR: 
+
+https://gabriel-souza-developer.github.io/gerar-registro-de-atendimento/?code=1000.cea9cc7cd27386787666b1dc9214d120.ec4985bd58f8964cdf3ca771efe0d52d&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com&
