@@ -16,8 +16,12 @@ Além disso, utilizamos o **ngrok** para expor o servidor local na internet, via
 
 <h2 id="projeto">Apresentação do projeto:</h2> 
 
-📹 **Demonstração em vídeo:**  
-[![Vídeo do Projeto](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](./assets/img/Localhost%20com%20direcionamento%20para%20github-pages.mp4)
+📹 **Demonstração em vídeo:**
+
+<video controls>
+  <source src="https://raw.githubusercontent.com/gabriel-souza-developer/desafio-zoho-api-oauth/main/assets/img/Localhost%20com%20direcionamento%20para%20github-pages.mp4" type="video/mp4">
+  Seu navegador não suporta o elemento de vídeo.
+</video>
 
 **Responsivo:** A interface se adapta a diferentes tamanhos de tela, de desktops a dispositivos móveis.
 
