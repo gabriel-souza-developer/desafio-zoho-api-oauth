@@ -1,0 +1,11 @@
+O que é cURL e POST request?
+
+cURL
+
+É uma biblioteca que permite ao PHP falar com outras URLs. Você pode enviar dados, receber respostas, simular formulários, etc.Usamos para falar com o Zoho e trocar o code pelo access_token.
+
+POST request é um tipo de requisição HTTP.
+
+Ao contrário do GET, que envia dados na URL (?param=value), o POST envia os dados no corpo da requisição. Muito usado para enviar informações sensíveis (como client_secret) de forma segura.
+
+Resumindo: cURL + POST request = PHP enviando dados para um endpoint do Zoho e recebendo o token.

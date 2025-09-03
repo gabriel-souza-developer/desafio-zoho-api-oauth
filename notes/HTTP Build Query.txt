@@ -1,0 +1,42 @@
+O que é HTTP Build Query?
+
+http_build_query é uma função usada em PHP (mas o conceito existe em qualquer linguagem) para transformar um array ou objeto em uma string de consulta (query string) para URLs.
+
+Estrutura de uma URL com query string
+
+Exemplo de URL normal:
+
+https://exemplo.com/busca?produto=cafe&quantidade=3
+
+
+? inicia a query string
+produto=cafe → chave = valor
+quantidade=3 → outra chave = valor
+& separa os pares
+
+O http_build_query faz isso automaticamente.
+
+<?php
+$dados = [
+    'produto' => 'cafe',
+    'quantidade' => 3,
+    'tipo' => 'solúvel'
+];
+
+// Gera a query string
+$queryString = http_build_query($dados);
+
+echo $queryString;
+?>
+
+SAÍDA da variável $queryString
+
+produto=cafe&quantidade=3&tipo=solúvel
+
+Agora você pode usar assim:
+
+$url = "https://exemplo.com/comprar?" . $queryString;
+echo $url;
+
+https://exemplo.com/comprar?produto=cafe&quantidade=3&tipo=solúvel
+

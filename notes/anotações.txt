@@ -6,7 +6,6 @@ FLUXO DO PROJETO:
 4. O PHP troca esse code pelo access_token.
 5. Exibe o token na tela (só pra teste).
 
-
 APLICAÇÃO COM SERIAL NOKIA: 
 
 https://186.232.194.141:8510/?code=1000.2fd3fae52fd341bff8d7d8defd2e0990.a97fcd11c0e8d943a5b4ae15b440592c&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com&

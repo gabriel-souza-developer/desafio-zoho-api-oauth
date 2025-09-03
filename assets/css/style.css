@@ -1,6 +1,6 @@
 :root {
   --primary-color: #2B3591;
-  --primary-color-hover: #20276e; 
+  --primary-color-hover: #20276e;
   --secondary-color: #CD2784;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
@@ -15,79 +15,75 @@
 body {
   background-color: var(--light-color);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text-color);
   min-height: 100vh;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
 }
 
-/* Logo dentro do card */
-.app-logo {
-  height: 65px;
-}
-
-/* Botão Zoho */
-.btn-zoho {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: #fff;
-}
-
-.btn-zoho:hover {
-  background-color: var(--primary-color-hover);
-  border-color: var(--primary-color-hover);
-}
-
-/* Card centralizado */
-.app-card {
-  max-width: 380px;
-  width: 100%;
-  border-radius: 1rem;
-  padding: 1.5rem;
-}
-
-.card-body a:hover {
-  background-color: var(--primary-color-hover);
-  border-color: var(--primary-color-hover);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
+/* ================= HEADER ================= */
 .app-header {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.app-header__logo img {
-  max-width: 200px;
-  margin-bottom: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
 }
 
 .app-header__title {
-  color: var(--primary-color);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0px 35px;
 }
 
-.app-header__subtitle {
-  color: var(--text-color);
-  font-size: 1rem;
-  margin-top: 0.5rem;
+.app-header__title:hover {
+  color: var(--secondary-color);
+}
+
+.app-header__login {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin: 0px 35px;
+}
+
+.app-header__login:hover {
+  color: var(--secondary-color);
+}
+
+/* ================= MAIN & CARD ================= */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .app-card {
-  max-width: 400px;
-  margin: auto;
-  margin-top: 5vh;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  /* sombra mais evidente */
   overflow: hidden;
   position: relative;
   background-color: var(--light-color);
-  z-index: 2;
+  padding: 2rem;
 }
 
 .app-card__bg {
@@ -101,20 +97,57 @@ body {
 .app-card .card-body {
   position: relative;
   z-index: 2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+
+.card-body p {
+  color: var(--text-color);
+  font-size: 1rem;
+
+}
+
+/* Logo dentro do card */
+.app-logo {
+  height: 65px;
+  max-width: 100%;
+}
+
+/* Botão Zoho */
+.btn-zoho {
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.15rem;
+  padding: 15px 25px;
+  border-radius: 10px
+}
+
+.btn-zoho:hover {
+  background-color: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: var(--secondary-color);
+}
+
+/* ================= FOOTER ================= */
 .app-footer {
   background-color: var(--dark-color);
   color: var(--light-color);
   text-align: center;
   padding: 1rem;
-  margin-top: auto;
   font-size: 0.9rem;
   border-top: 1px solid var(--form-section-border);
 }
 
 .app-footer__github-link {
-  color: var(--se-color);
+  color: var(--light-color);
   text-decoration: none;
   font-size: 1.2rem;
   margin-left: 8px;
@@ -122,6 +155,44 @@ body {
 }
 
 .app-footer__github-link:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .app-header__title {
+    font-size: 1rem;
+  }
+
+  .app-header__login {
+    font-size: 0.9rem;
+  }
+
+  .app-card {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    align-items: center;
+    text-align: center;
+  }
+
+  .app-header__title,
+  .app-header__login {
+    margin: 0 auto;
+  }
+
+  .btn-zoho {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}

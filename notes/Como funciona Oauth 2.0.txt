@@ -1,0 +1,19 @@
+Imagine assim: a chave do armário
+
+Você tem uma conta de email ou serviço (ex: Google, Zoho).Um aplicativo (ex: um calendário ou gerenciador de tarefas) quer acessar alguns dados seus (ex: seus compromissos).
+
+Você não quer dar sua senha para esse app. O OAuth 2.0 é como um sistema de “chaves temporárias”. Em vez de dar sua senha, você dá uma chave que só funciona para aquilo que o app precisa e que expira depois de um tempo.
+
+
+https://accounts.zoho.com/oauth/v2/auth?
+scope=ZohoConnect.organization.READ&
+client_id=SEU_CLIENT_ID&
+response_type=code&
+access_type=offline&
+redirect_uri=SEU_REDIRECT_URI
+
+scope → define o que sua aplicação pode acessar. (exemplo: ZohoConnect.organization.READ só leitura da organização).
+client_id → o que você pegou no console.
+redirect_uri → igual ao que cadastrou no app.
+response_type=code → para receber um código de autorização.
+access_type=offline → para conseguir refresh token
